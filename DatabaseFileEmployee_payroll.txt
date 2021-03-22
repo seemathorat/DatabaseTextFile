@@ -1,0 +1,29 @@
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 171
+Server version: 8.0.23 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------------+
+| Database                 |
++--------------------------+
+| employee_payroll_service |
+| employeepayroll          |
+| information_schema       |
+| mysql                    |
+| performance_schema       |
+| sys                      |
++--------------------------+
+6 rows in set (0.00 sec)
+
+mysql>  create database employee_payroll_service;
+ERROR 1007 (HY000): Can't create database 'employee_payroll_service'; database exists
+mysql>  use employee_payroll_service;
+Database changed
