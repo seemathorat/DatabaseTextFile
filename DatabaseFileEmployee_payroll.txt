@@ -27,3 +27,25 @@ mysql>  create database employee_payroll_service;
 ERROR 1007 (HY000): Can't create database 'employee_payroll_service'; database exists
 mysql>  use employee_payroll_service;
 Database changed
+
+
+*****UC-2*****
+
+mysql>  create database employee_payroll_service;
+ERROR 1007 (HY000): Can't create database 'employee_payroll_service'; database exists
+mysql>  use employee_payroll_service;
+Database changed
+mysql> ^C
+mysql> create table employee_payroll (id INT unsigned NOT NULL AUTO_INCREMENT, name VARCHAR(200) NOT NULL, salary Double NOT NULL, start DATE NOT NULL, PRIMARY KEY (id));
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> describe employee_payroll;
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int unsigned | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(200) | NO   |     | NULL    |                |
+| salary | double       | NO   |     | NULL    |                |
+| start  | date         | NO   |     | NULL    |                |
++--------+--------------+------+-----+---------+----------------+
+4 rows in set (0.02 sec)
