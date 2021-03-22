@@ -62,3 +62,16 @@ Query OK, 1 row affected (0.01 sec)
 mysql> insert into employee_payroll(name, salary, start) values ("Charlie", 3000000.00, "2020-05-11");
 Query OK, 1 row affected (0.01 sec)
 
+
+***UC-4****
+
+mysql> select *from employee_payroll;
++----+---------+---------+------------+
+| id | name    | salary  | start      |
++----+---------+---------+------------+
+|  1 | Bill    | 1000000 | 2018-01-03 |
+|  2 | Terisa  | 2000000 | 2018-11-03 |
+|  3 | Charlie | 3000000 | 2020-05-11 |
++----+---------+---------+------------+
+3 rows in set (0.00 sec)
+
